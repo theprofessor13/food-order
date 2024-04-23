@@ -1,0 +1,568 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap') */
+body{
+    font-family: "Nunito", sans-serif;
+    text-transform: capitalize;
+    transition:0.5s ease-in-out;
+}
+.first{
+    padding-bottom: 180px;
+}
+.navbar{
+    border: 2px solid whitesmoke;
+    box-shadow: 5px 5px 5px gainsboro;
+    display: flex;
+    margin-top: 0px;
+    margin-left: -20px;
+    margin-right: -20px;
+    justify-content: center;
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: white;
+}
+.navbar>p{
+    position: absolute;
+    margin-right: 999px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    font-family: "Nunito", sans-serif;
+    color:  rgb(5, 5, 93);
+}
+.navbar>p::before{
+    content: url(knife-and-fork.png);
+}
+.list{
+    padding: 15px;
+}
+.list>a{
+    padding: 10px;
+    text-decoration: none;
+    color: gray;
+}
+.list>a:hover{
+    background-color: #27AE60;
+    border: 2px solid #27AE60;
+    color: white;
+    border-radius: 5px;
+}
+.icons{
+    position: absolute;
+    cursor: pointer;
+    margin-left: 926px;
+    margin-top: 10px;
+    padding-left: 2px;
+    height: 2.2rem;
+    line-height: 2.2rem;
+    width: 2.0rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: var(--black);
+    border-radius: 50%;
+    background: #eee;
+}
+.icon{
+    position: absolute;
+    cursor: pointer;
+    margin-left: 77%;
+    margin-top: 10px;
+    padding-left: 2px;
+    height: 2.2rem;
+    line-height: 2.2rem;
+    width: 2.0rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: var(--black);
+    border-radius: 50%;
+    background: #eee;
+}
+.cart{
+    position: absolute;
+    cursor: pointer;
+    margin-left: 83%;
+    margin-top: 10px;
+    padding-left: 2px;
+    height: 2.2rem;
+    line-height: 2.2rem;
+    width: 2.0rem;
+    text-align: center;
+    font-size: 1.7rem;
+    color: var(--black);
+    border-radius: 50%;
+    background: #eee;
+}
+swiper-container {
+    margin-top: 20px;
+    width: 80%;
+    height: 20%;
+}
+swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper swiper-slide img {
+    display: block;
+    width: 50%;
+    height: 100%;
+    object-fit: cover;
+}
+.review swiper-slide img {
+    display: block;
+    width: 10%;
+    border-radius: 80px;
+    height: 100%;
+    object-fit: cover;
+}
+.content{
+    padding: -100px;
+}
+.content span{
+    color:  #27AE60;
+    font-size: 1.5rem;
+}
+.content>h3{
+    color:  rgb(5, 5, 93);
+    font-size: 4rem;
+}
+b{
+    color: gray;
+    font-size: 1.2rem;
+    padding: 1rem 0;
+    line-height: 1.5;
+}
+.content button{ 
+    text-transform: capitalize;
+    background-color:rgb(5, 5, 93) ; 
+    color: white;
+    font-family: sans-serif;
+    padding: .3rem ;
+    cursor: pointer;
+    margin-top: .5rem;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+}
+.dishes{
+    margin-top: 0px;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-top: 10px;
+    background-color: gainsboro;
+}
+.dishes>h3{
+    text-align: center;
+    color: #27AE60;
+    font-size: 20px;
+    padding-top: 50px;
+}
+h1{
+    text-align: center;
+    color: rgb(5, 5, 93) ;
+    font-size: 2rem;
+    margin-top: -19px;
+    padding-bottom: rem;
+    text-transform: uppercase;
+}
+.dish_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(26rem, 1fr));
+    gap: 1.1rem;
+    padding-bottom: 30px;
+}
+.burger{
+    padding: 0.5rem;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 2px solid rgba(0, 0, 0, .2);
+    box-shadow: 2px 2px 2px gray;
+    text-align: center;
+    position: relative;
+    width: 550px;
+    border: none;
+    margin: auto;
+}
+.burger>h3{
+    font-size: 2rem;
+}
+.stars{
+    margin-top: -16px;
+}
+.burger button{
+    font-size: 1.0rem;
+    width: 160px;
+    margin-left: -10px;
+    color: white;
+    height: 45px;
+    border: none;
+    background-color: rgb(5, 5, 93);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.burger span{
+    color: #27AE60;
+    font-weight: bolder;
+    margin-right: 1rem;
+    font-size: 2.5rem;
+}
+.about{
+    padding-top: 40px;
+    padding-bottom: 200px;
+}
+.about>h3{
+    font-size: 20px;
+    color: #27AE60;
+    text-align: center;
+}
+.row{
+    display: flex;
+    flex-wrap:nowrap;
+    padding-top: 50px;
+    width: 80%;
+    margin: auto;
+}
+.detail{
+    flex: 1 1 45rem;
+}
+.detail>big{
+    font-size: 40px;
+    font-weight: bold;
+    color: rgb(5, 5, 93);
+}
+.detail>b{
+    font-size: 15px;
+    padding: .5rem 0;
+    line-height: 2;
+}
+.img{
+    flex: 1 1 39rem;
+}
+.sign{
+    background: #eee;
+    border-radius: .5rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: x-large;
+    font-weight: lighter;
+    color: rgb(5, 5, 93);
+    width: 250px;
+    padding: 18px;
+    position: absolute;
+    margin-top:-50px;
+    margin-left: 600px;
+}
+.sign span{
+    color: rgb(5, 5, 93);
+}
+.dollar{
+    background: #eee;
+    border-radius: .5rem;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: x-large;
+    font-weight: lighter;
+    color: rgb(5, 5, 93);
+    width: 250px;
+    padding: 18px;
+    position: absolute;
+    margin-top:-50px;
+    margin-left: 900px;
+}
+.dollar span{
+    color: rgb(5, 5, 93); 
+}
+.headset{
+    background: #eee;
+    border-radius: .5rem;
+    color: rgb(5, 5, 93);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    font-size: x-large;
+    font-weight: lighter;
+    width: 350px;
+    padding: 18px;
+    position: absolute;
+    margin-top:45px;
+    margin-left: 600px;
+}
+.headset span{
+    color: rgb(5, 5, 93);
+}
+.btn{
+    position: absolute;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    background-color: rgb(5, 5, 93);
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    padding-bottom:  60px;
+    margin-left: 1000px;
+    margin-top:45px;
+}
+
+button:hover{
+    background-color: #27AE60;
+    font-size: large;
+    transition: 0.5s ease-in;
+}
+.btn:hover{
+    background-color: #27AE60;
+    font-size: x-large;
+    transition: 0.5s ease-in;
+}
+.menu>h4{
+    font-size: 20px;
+    color: #27AE60;
+    text-align: center;
+}
+.menu{
+    background-color: #EEEEEE;
+    padding: 10px;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding: 30px;
+}
+.men_container{
+    width: 85%;
+    margin: auto;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 15px;
+    padding: 10px;
+}
+.box{
+    border: 2px solid black;
+    background: #fff;
+    width: 80%;
+    padding: 25px;
+    border: 1px solid gainsboro;
+    border-radius: .5rem;
+    box-shadow: 2px 2px 2px gainsboro;
+}
+.box>img{
+    border-radius: .5rem;
+    object-fit: cover;
+    padding-top: 0px;
+    padding-left: 0px;
+}
+#fas{
+    position: relative;
+    background-color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid gainsboro;
+    border-radius: 50%;
+    bottom: 180px;
+    left: 220px;
+}
+.word .stars{
+    margin-top: -29px;
+}
+.word>h5{
+    font-size: 2.0rem;
+    color: rgb(5, 5, 93);
+    margin-top: -10px;
+}
+.word>h6{
+    font-size: 1.2rem;
+    line-height: 1.2;
+    color: gray;
+    margin-top: -35px;
+}
+.bn{
+    color: #fff;
+    background: rgb(5, 5, 93);;
+    border-radius: .5rem;
+    cursor: pointer;
+    text-decoration: none;
+    padding: .8rem 3rem;
+    margin-top: 0px;
+}
+.price{
+    color:#27AE60;
+    position: absolute;
+    font-size: 30px;
+    margin-top: -30px;
+    margin-left: 180px;
+    padding: 5px;
+}
+.review{
+    padding: 20px;
+}
+.review>h4{
+    font-size: 20px;
+    color: #27AE60;
+    text-align: center;
+}
+.john{
+    border: 2px solid black;
+    width: 30%;
+    display: block;
+    border: 1px solid rgba(0, 0, 0, .2);
+    background-color: #fff;
+    padding: 2.5rem;
+    width: 300px;
+    height: 220px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    margin-left: 100px; 
+}
+.user .stars{
+    margin-left: -70px;
+    font-size: 15px;
+}
+.john img{
+    margin-top: -100px;
+    margin-left: -30px;
+}
+.john .fa-quote-right {
+    position: relative;
+    top: -30px; 
+    right: -140px;
+    font-size: 70px;
+    color: #ccc;
+    /* margin-left: 300px; */
+}
+.john h3{
+    text-align: center;
+   font-size: 25px;
+    color:#192a56;
+    padding-top: 0px;
+    text-transform: capitalize;
+    margin-top: -70px;
+    margin-left: -60px;
+}
+.john>p{
+    font-size: 1.5rem;
+    line-height: 1.8;
+    font-size: 1.0rem;
+    color: #666;
+    text-transform: capitalize;
+    margin-top: 3dvi;
+}
+.john:nth-child(even) h3{
+    margin-left: -30px;
+}
+.order{
+    background-color: gainsboro;
+    padding-top: 29px;
+    padding-bottom: 30px;
+    margin-top: -10px;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.order>h4{
+    font-size: 20px;
+    color: #27AE60;
+    text-align: center;
+}
+.inputbox{
+    width: 76%;
+    box-shadow: 2px 2px 2px gray;
+    border-radius: 5px;
+    border:2px solid gainsboro;
+    background: rgb(255, 255, 255);
+    padding: 20px;
+    margin:auto;
+}
+.input_field{
+    border: 2px black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+label,span{
+    display: block;
+    font-size:25px;
+    color: gray;
+    padding: 0.5rem 0px;
+}
+input{
+    font-size: 1.6rem;
+    text-transform: non;
+    margin-bottom: 1rem;
+    width: 76%;
+    border: none;
+    background: rgb(238, 238, 238);
+    border-radius: 10px;
+    padding: 15px;
+    padding-right: 70px;
+    padding-left: 40px;
+}
+input[type=datetime-local]{
+    padding: px;
+}
+.input textarea {
+    height: 20rem;
+    resize: none;
+    font-size: 1.6rem;
+    margin-bottom: 1rem;
+    width: 85%;
+    border: none;
+    background: rgb(238, 238, 238);
+    border-radius: 10px;
+    padding: 1rem;
+}
+.inputbox button{
+    font-size: 22px;
+    width: 180px;
+    margin-left: 10px;
+    color: white;
+    height: 45px;
+    border: none;
+    background-color: rgb(5, 5, 93);
+    border-radius: 5px;
+    cursor: pointer;
+}
+.contain{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+    padding-left: 2px;
+}
+.contain h3{
+    font-size: 2.0rem;
+    color: rgb(5, 5, 93);
+    padding: 0.5rem 0px;
+}
+.contain a{
+    display: block;
+    font-size: 15px;
+    color: gray;
+    text-decoration: none;
+    padding: 5px;
+}
+.contain a:hover{
+    color:#27AE60;
+    text-decoration: underline;
+}
+.credit{
+    text-align: center;
+    font-size: 2rem;
+    color:rgb(5, 5, 93) ;
+    margin-top: 1.5rem;
+    border-top: 2px solid rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+.credit u{
+    color: #27AE60;
+    text-decoration: none;
+}
